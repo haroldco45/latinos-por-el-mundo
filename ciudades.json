@@ -89,6 +89,28 @@
         "en": "Canada"
       },
       "url": "https://haroldco45.github.io/leamington-para-latinos/"
+    },
+    {
+      "id": "hamamatsu",
+      "flag": "🇯🇵",
+      "es": "Hamamatsu",
+      "en": "Hamamatsu",
+      "pais": {
+        "es": "Japón",
+        "en": "Japan"
+      },
+      "url": "https://haroldco45.github.io/hamamatsu-para-latinos/"
+    },
+    {
+      "id": "oizumi",
+      "flag": "🇯🇵",
+      "es": "Oizumi",
+      "en": "Oizumi",
+      "pais": {
+        "es": "Japón",
+        "en": "Japan"
+      },
+      "url": "https://haroldco45.github.io/oizumi-para-latinos/"
     }
   ]
 }
