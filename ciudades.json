@@ -1,0 +1,72 @@
+{
+  "actualizado": "2026-10-21",
+  "nota": "Para agregar una ciudad nueva, añádela a esta lista. Con \"pronto\": true aparece como 'Muy pronto' sin enlace.",
+  "ciudades": [
+    {
+      "id": "londres",
+      "flag": "🇬🇧",
+      "es": "Londres",
+      "en": "London",
+      "pais": {
+        "es": "Reino Unido",
+        "en": "United Kingdom"
+      },
+      "url": "https://haroldco45.github.io/londres-para-latinos/"
+    },
+    {
+      "id": "madrid",
+      "flag": "🇪🇸",
+      "es": "Madrid",
+      "en": "Madrid",
+      "pais": {
+        "es": "España",
+        "en": "Spain"
+      },
+      "url": "https://haroldco45.github.io/madrid-para-latinos/"
+    },
+    {
+      "id": "bilbao",
+      "flag": "🇪🇸",
+      "es": "Bilbao",
+      "en": "Bilbao",
+      "pais": {
+        "es": "España",
+        "en": "Spain"
+      },
+      "url": "https://haroldco45.github.io/bilbao-para-latinos/"
+    },
+    {
+      "id": "medellin",
+      "flag": "🇨🇴",
+      "es": "Medellín",
+      "en": "Medellín",
+      "pais": {
+        "es": "Colombia",
+        "en": "Colombia"
+      },
+      "url": "https://haroldco45.github.io/medellin-para-latinos/"
+    },
+    {
+      "id": "miami",
+      "flag": "🇺🇸",
+      "es": "Miami",
+      "en": "Miami",
+      "pais": {
+        "es": "Estados Unidos",
+        "en": "United States"
+      },
+      "url": "https://haroldco45.github.io/miami-para-latinos/"
+    },
+    {
+      "id": "nueva-york",
+      "flag": "🇺🇸",
+      "es": "Nueva York",
+      "en": "New York",
+      "pais": {
+        "es": "Estados Unidos",
+        "en": "United States"
+      },
+      "url": "https://haroldco45.github.io/nueva-york-para-latinos/"
+    }
+  ]
+}

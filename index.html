@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Latinos por el Mundo — Vibras Positivas HM</title>
+<meta name="description" content="Guías gratis y bilingües para latinos recién llegados: Londres, Madrid, Bilbao, Medellín, Miami, Nueva York y más ciudades.">
+<meta name="theme-color" content="#EB0A1E">
+<meta property="og:title" content="Latinos por el Mundo — guías para recién llegados">
+<meta property="og:description" content="Escoge tu ciudad: mapa, transporte, papeles, derechos, salud, trabajo e inglés o idioma local. Gratis, en español.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vibras Positivas HM">
+<meta property="og:url" content="https://haroldco45.github.io/latinos-por-el-mundo/">
+<meta property="og:image" content="https://haroldco45.github.io/latinos-por-el-mundo/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://haroldco45.github.io/latinos-por-el-mundo/og-image.png">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#EB0A1E;--ink:#111;--bg:#fff;--card:#fff;--muted:#666;--line:#eee}
+@media (prefers-color-scheme:dark){:root{--ink:#f2f2f2;--bg:#0f0f10;--card:#18181a;--muted:#aaa;--line:#2a2a2d}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--red);color:#fff;padding:40px 16px 34px}
+.in{max-width:960px;margin:0 auto}
+.kick{display:inline-block;background:#fff;color:var(--red);font-family:'Barlow Condensed';font-weight:800;padding:4px 12px;border-radius:8px;text-transform:uppercase}
+h1{font-family:'Barlow Condensed';font-weight:800;text-transform:uppercase;font-size:clamp(2.4rem,9vw,4.2rem);line-height:.95;margin:14px 0 10px}
+header p{margin:0;font-size:1.1rem;max-width:560px}
+main{padding:24px 16px 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+a.c,div.c{display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:18px;background:var(--card);border:2px solid var(--red);text-decoration:none;color:inherit;transition:transform .15s}
+a.c:hover{transform:translateY(-2px)}
+.c .f{font-size:2.4rem;line-height:1}
+.c b{font-family:'Barlow Condensed';font-size:1.6rem;text-transform:uppercase;margin-top:8px}
+.c small{color:var(--muted)}
+.c .go{margin-top:8px;color:var(--red);font-weight:700}
+div.c{border-style:dashed;opacity:.6}
+.lang{float:right}.lang button{border:2px solid #fff;background:transparent;color:#fff;font-weight:700;padding:4px 10px;border-radius:999px;cursor:pointer}.lang button.on{background:#fff;color:var(--red)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 16px 40px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <div class="lang"><button id="b-es" class="on" onclick="setL('es')">ES</button> <button id="b-en" onclick="setL('en')">EN</button></div>
+  <span class="kick" id="k">Recién llegado</span>
+  <h1 id="t">Latinos por el mundo</h1>
+  <p id="s">Escoge tu ciudad. Cada guía trae mapa, transporte, papeles, tus derechos, salud, trabajo y el idioma que vas a necesitar. Gratis.</p>
+</div></header>
+<main class="in"><div class="grid" id="g"></div></main>
+<footer><b>Desarrollada por Vibras Positivas HM — Derechos de Autor Reservados</b></footer>
+<script>
+let L=(navigator.language||'es').startsWith('en')?'en':'es', C=[];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function setL(l){L=l;document.documentElement.lang=l;render();}
+function render(){
+  document.getElementById('b-es').classList.toggle('on',L==='es');document.getElementById('b-en').classList.toggle('on',L==='en');
+  document.getElementById('k').textContent=L==='en'?'Just arrived':'Recién llegado';
+  document.getElementById('t').textContent=L==='en'?'Latinos around the world':'Latinos por el mundo';
+  document.getElementById('s').textContent=L==='en'?'Pick your city. Each guide has a map, transport, paperwork, your rights, health, work and the language you\'ll need. Free.':'Escoge tu ciudad. Cada guía trae mapa, transporte, papeles, tus derechos, salud, trabajo y el idioma que vas a necesitar. Gratis.';
+  document.getElementById('g').innerHTML=C.map(x=>{const n=x[L]||x.es,p=(x.pais&&(x.pais[L]||x.pais.es))||'';
+    return x.pronto?`<div class="c"><span class="f">${esc(x.flag)}</span><b>${esc(n)}</b><small>${esc(p)}</small><span class="go">${L==='en'?'Coming soon':'Muy pronto'}</span></div>`
+    :`<a class="c" href="${esc(x.url)}"><span class="f">${esc(x.flag)}</span><b>${esc(n)}</b><small>${esc(p)}</small><span class="go">${L==='en'?'Open guide →':'Abrir guía →'}</span></a>`;}).join('');
+}
+fetch('ciudades.json',{cache:'no-cache'}).then(r=>r.json()).then(j=>{C=j.ciudades||[];setL(L);}).catch(()=>{document.getElementById('g').textContent='Sin conexión.';});
+</script>
+</body>
+</html>
