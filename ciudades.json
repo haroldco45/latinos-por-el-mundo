@@ -67,6 +67,17 @@
         "en": "United States"
       },
       "url": "https://haroldco45.github.io/nueva-york-para-latinos/"
+    },
+    {
+      "id": "toledo",
+      "flag": "🇪🇸",
+      "es": "Toledo",
+      "en": "Toledo",
+      "pais": {
+        "es": "España",
+        "en": "Spain"
+      },
+      "url": "https://haroldco45.github.io/toledo-para-latinos/"
     }
   ]
 }
