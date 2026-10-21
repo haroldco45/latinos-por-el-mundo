@@ -78,6 +78,17 @@
         "en": "Spain"
       },
       "url": "https://haroldco45.github.io/toledo-para-latinos/"
+    },
+    {
+      "id": "leamington",
+      "flag": "🇨🇦",
+      "es": "Leamington",
+      "en": "Leamington",
+      "pais": {
+        "es": "Canadá",
+        "en": "Canada"
+      },
+      "url": "https://haroldco45.github.io/leamington-para-latinos/"
     }
   ]
 }
