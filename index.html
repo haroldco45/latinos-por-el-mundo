@@ -66,5 +66,6 @@ function render(){
 }
 fetch('ciudades.json',{cache:'no-cache'}).then(r=>r.json()).then(j=>{C=j.ciudades||[];setL(L);}).catch(()=>{document.getElementById('g').textContent='Sin conexión.';});
 </script>
+<script src="https://haroldco45.github.io/vibras-anuncios/anuncio.js" data-app="latinos-por-el-mundo" defer></script>
 </body>
 </html>
