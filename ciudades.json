@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21",
+  "actualizado": "2026-10-27",
   "nota": "Para agregar una ciudad nueva, añádela a esta lista. Con \"pronto\": true aparece como 'Muy pronto' sin enlace.",
   "ciudades": [
     {
@@ -111,6 +111,61 @@
         "en": "Japan"
       },
       "url": "https://haroldco45.github.io/oizumi-para-latinos/"
+    },
+    {
+      "id": "getxo",
+      "flag": "🇪🇸",
+      "es": "Getxo",
+      "en": "Getxo",
+      "pais": {
+        "es": "España",
+        "en": "Spain"
+      },
+      "url": "https://haroldco45.github.io/getxo-para-latinos/"
+    },
+    {
+      "id": "willemstad",
+      "flag": "🇨🇼",
+      "es": "Willemstad",
+      "en": "Willemstad",
+      "pais": {
+        "es": "Curazao",
+        "en": "Curaçao"
+      },
+      "url": "https://haroldco45.github.io/willemstad-para-latinos/"
+    },
+    {
+      "id": "cartagena",
+      "flag": "🇨🇴",
+      "es": "Cartagena",
+      "en": "Cartagena",
+      "pais": {
+        "es": "Colombia",
+        "en": "Colombia"
+      },
+      "url": "https://haroldco45.github.io/cartagena-para-latinos/"
+    },
+    {
+      "id": "norcasia",
+      "flag": "🇨🇴",
+      "es": "Norcasia",
+      "en": "Norcasia",
+      "pais": {
+        "es": "Colombia",
+        "en": "Colombia"
+      },
+      "url": "https://haroldco45.github.io/norcasia-para-latinos/"
+    },
+    {
+      "id": "cano-canoas",
+      "flag": "🇨🇴",
+      "es": "Caño Canoas",
+      "en": "Caño Canoas",
+      "pais": {
+        "es": "Colombia",
+        "en": "Colombia"
+      },
+      "url": "https://haroldco45.github.io/cano-canoas-para-latinos/"
     }
   ]
 }
